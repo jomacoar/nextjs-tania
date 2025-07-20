@@ -18,20 +18,19 @@ export default function Home() {
   /* await new Promise((resolve) => setTimeout(resolve, 1000)); */
 
   return (
-    <>
-      <main className="relative h-screen w-full grid place-content-center place-items-center font-boldonse">
+    <div className="container w-full mx-auto">
+      <main className="relative h-screen w-full grid place-content-center place-items-center font-boldonse px-4 sm:px-6 lg:px-8 py-8">
         {/* <Leafs
           className="absolute -top-8 left-8 rotate-6 scale-y-[-1] svg-color-primary z-30"
           width="130"
           height="130"
           fill="zinc-50"
         /> */}
-        {/* Navigation bar */}
-        <div className="absolute w-full top-8 justify-center flex z-20">
+
+        <div className="hidden md:flex absolute w-full top-8 justify-center z-20">
           <GlassmorphNavbar personal="backdrop-blur-lg border-petroMain border-3 tracking-[1.25px] text-[14px] text-primary" />
         </div>
-        {/* Side Navigation bar for small screens */}
-        <div className="absolute w-full top-8 left-8 z-60">
+        <div className="md:hidden absolute w-full top-8 left-8 z-60">
           <SideNavBar links={menuLinksPT} />
         </div>
         {/* Ornaments */}
@@ -122,17 +121,18 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className="absolute backgroundImage opacity-50 top-0 left-0 w-full h-full mx-auto -z-10"></div>
       </main>
-      <div className="relative w-full h-screen flex justify-center items-center bg-zinc-50">
+      <div className="absolute backgroundImage opacity-50 top-0 left-0 w-full h-full mx-auto -z-10"></div>
+      <div className="relative w-full h-screen container mx-auto px-2 sm:px-4 lg:px-6 flex justify-center items-center bg-zinc-50">
         <Aboutme />
       </div>
-      <div className="relative w-full h-screen flex justify-center items-center">
+      <div className="relative w-full h-screen">
         <Contact />
+        <div className="absolute backgroundImage3 top-0 left-0 w-full h-full mx-auto -z-10"></div>
       </div>
-      <div className="flex items-center justify-center w-full h-[180px]">
+      <div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }

@@ -5,12 +5,17 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --breakpoint-*: initial;
+  /* --breakpoint-*: initial;
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 960px;
   --breakpoint-xl: 1200px;
-  --breakpoint-xxl: 1600px;
+  --breakpoint-xxl: 1600px; */
+
+  /* override/add breakpoints using rem units */
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem; /* enlarge 2xl from default 96rem */
+  --breakpoint-3xl: 120rem;
 
   --color-primary: #f4f4f5;
   --color-secondary: #09090b;

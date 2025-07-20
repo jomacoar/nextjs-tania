@@ -9,14 +9,14 @@ const styles =
 
 export default function Contact() {
   return (
-    <div className="relative backgroundImage3 top-0 left-0 w-full h-full bg-zinc-300 grid place-items-center justify-items-center">
+    <div className="top-0 left-0 w-full h-screen grid place-items-center justify-items-center">
       <ConversationBubbles
-        className="absolute top-[20%] left-[20%] svg-color-primary z-30"
+        className="absolute top-[20%] left-[10%] svg-color-primary z-30"
         width="90"
         height="90"
       />
       <ConversationBubbles
-        className="absolute bottom-[20%] right-[20%] scale-x-[-1] svg-color-primary z-30"
+        className="absolute bottom-[20%] lg:right-[10%] scale-x-[-1] svg-color-primary z-30"
         width="55"
         height="55"
       />

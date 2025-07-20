@@ -15,7 +15,7 @@ export default function contactForm() {
   return (
     <Form
       action={formAction}
-      className="bg-primary drop-shadow-lg w-[40%] h-[55vh] rounded-[64px] mt-0 mb-4 text-center flex-col justify-center items-center font-montserrat outline-1 outline-primary outline-offset-12"
+      className="bg-primary drop-shadow-lg w-[70%] lg:w-[60%] xl:w-[50%] h-[55vh] rounded-[64px] mt-0 mb-4 text-center flex-col justify-center items-center font-montserrat outline-1 outline-primary outline-offset-12"
     >
       <div className="w-full mt-10 mb-4 justify-center items-center">
         <label className="block mb-1 pl-10 text-start text-md italic text-secondary">
